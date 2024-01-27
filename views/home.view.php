@@ -1,5 +1,4 @@
 <?php
-  require_once 'router.php';
 
   $page = "Home Page";
 
@@ -10,7 +9,7 @@
 
 
 <div class="container">
-  <h1>This is Home Page</h1>
+  <p>This is Home Page</p>
 </div>
 
 <?php require_once 'partials/footer.php'; ?>

@@ -1,12 +1,9 @@
 <?php
 
+require 'functions.php';
 
-function check_page($para)
-{
-  return $para == basename($_SERVER['REQUEST_URI']) ? 'active' : '';
+require 'router.php';
 
-}
-
-
-require_once 'router.php';
-
+$pdo = new PDO($connection);
+$pdo->query("SELECT * FROM users");
+$pdo->execute();
